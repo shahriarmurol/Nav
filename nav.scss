@@ -48,4 +48,10 @@ $nav-font-color:#fff;
 }
 .menu li:hover > .sub-menu{ /* > ar mane imediat child (mane ul ar li)*/
 	display: block;
+	z-index: 99;
+}
+/* sub sub menu */
+.sub-menu li:hover .sub-menu {
+	left: 100%;
+	top:0;
 }
