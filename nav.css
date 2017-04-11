@@ -13,7 +13,6 @@
   /* two menu space problem solve*/ }
 
 .menu li {
-  /* > ar mane imediat child (mane ul ar li)*/
   display: inline-block;
   background: #3498DB; }
 
@@ -26,5 +25,25 @@
 
 .menu li:hover {
   background: #1d6fa5; }
+
+/* style for submeny */
+.menu li {
+  position: relative; }
+
+.sub-menu {
+  left: 0;
+  padding: 5;
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  border-top: 3px solid #1d6fa5;
+  display: none; }
+
+.sub-menu li {
+  display: block; }
+
+.menu li:hover > .sub-menu {
+  /* > ar mane imediat child (mane ul ar li)*/
+  display: block; }
 
 /*# sourceMappingURL=nav.css.map */

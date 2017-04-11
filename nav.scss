@@ -9,13 +9,14 @@
 }
 $nav-bg-color:#3498DB;
 $nav-bg-hover-color:darken($nav-bg-color, 15%);
+$sub-nav-bg:#333;
 
 $nav-font-color:#fff;
 .menu{
 	list-style: none;
 	background: $nav-bg-color; /* two menu space problem solve*/
 }
-.menu li{ /* > ar mane imediat child (mane ul ar li)*/
+.menu li{ 
 	display: inline-block;
 	background: $nav-bg-color;
 }
@@ -28,4 +29,23 @@ $nav-font-color:#fff;
 }
 .menu li:hover{
 	background:$nav-bg-hover-color;
+}
+/* style for submeny */
+.menu li{
+	position: relative;
+}
+.sub-menu {
+  left: 0;
+  padding: 5;
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  border-top: 3px solid darken($nav-bg-color, 15%);
+  display: none;
+}
+.sub-menu li{
+	display: block;
+}
+.menu li:hover > .sub-menu{ /* > ar mane imediat child (mane ul ar li)*/
+	display: block;
 }
