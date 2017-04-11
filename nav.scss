@@ -1,0 +1,31 @@
+/* nav style */
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+$nav-bg-color:#3498DB;
+$nav-bg-hover-color:darken($nav-bg-color, 15%);
+
+$nav-font-color:#fff;
+.menu{
+	list-style: none;
+	background: $nav-bg-color; /* two menu space problem solve*/
+}
+.menu li{ /* > ar mane imediat child (mane ul ar li)*/
+	display: inline-block;
+	background: $nav-bg-color;
+}
+.menu li a{
+	padding:20px;
+	display: block;
+	color: $nav-font-color;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.menu li:hover{
+	background:$nav-bg-hover-color;
+}

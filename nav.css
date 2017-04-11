@@ -1,0 +1,30 @@
+/* nav style */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.menu {
+  list-style: none;
+  background: #3498DB;
+  /* two menu space problem solve*/ }
+
+.menu li {
+  /* > ar mane imediat child (mane ul ar li)*/
+  display: inline-block;
+  background: #3498DB; }
+
+.menu li a {
+  padding: 20px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize; }
+
+.menu li:hover {
+  background: #1d6fa5; }
+
+/*# sourceMappingURL=nav.css.map */
