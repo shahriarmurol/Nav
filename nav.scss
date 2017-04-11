@@ -1,3 +1,10 @@
+/*
+	Theme Naem: Multiple Dropdown Menu
+	Author : Shahriar Hosen
+	URL : http://shahriarmurol.tk
+
+*/
+
 /* nav style */
 *{
 	margin: 0;
@@ -66,3 +73,38 @@ $nav-font-color:#fff;
 	left: 100%;
 	top:0;
 }
+/* Responsive */
+  @media only screen and (max-width : 767px) {
+  	.menu{}
+  	.menu li{
+  		display: block;
+  	}
+  	.sub-menu {
+  		width: 100%;
+  		left: 0;
+  		top: 200%;
+	}
+	.menu li:hover > .sub-menu{
+		top: 100%;
+	}
+	.sub-menu a{
+		margin-left: 15px;
+	}
+	.sub-menu li:hover .sub-menu a{
+		margin-left: 30px;
+	}
+	.sub-menu li:hover .sub-menu li:hover .sub-menu a{
+		margin-left: 45px;
+	}
+
+	.sub-menu .sub-menu{
+		left: 0;
+		top: 100%;
+		transition: 1s;
+	}
+	.sub-menu li:hover .sub-menu{
+		display: block;
+		left: 0;
+		top: 100%;
+	}
+ }
