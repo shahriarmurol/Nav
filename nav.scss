@@ -38,10 +38,13 @@ $nav-font-color:#fff;
   left: 0;
   padding: 5;
   position: absolute;
-  top: 100%;
+  top: 200%; 
   width: 200px;
   border-top: 3px solid darken($nav-bg-color, 15%);
-  display: none;
+  /*display: none;*/
+  opacity: 0;
+  visibility: hidden;
+  transition:1s;
 }
 .sub-menu li{
 	display: block;
@@ -49,9 +52,17 @@ $nav-font-color:#fff;
 .menu li:hover > .sub-menu{ /* > ar mane imediat child (mane ul ar li)*/
 	display: block;
 	z-index: 99;
+	top: 100%;
+	opacity: 1;
+	visibility: visible;
+}
+/* submenu animation */
+.sub-menu .sub-menu {
+	left: 130%;
+	top: 0;
 }
 /* sub sub menu */
-.sub-menu li:hover .sub-menu {
+.sub-menu li:hover > .sub-menu {
 	left: 100%;
 	top:0;
 }
