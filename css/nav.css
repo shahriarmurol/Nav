@@ -69,6 +69,13 @@
   left: 100%;
   top: 0; }
 
+/* nav indecator */
+.nav-indicator {
+  display: inline-block;
+  text-align: right;
+  margin-left: 5px; }
+
+/* nav icon */
 /* Responsive */
 @media only screen and (max-width: 767px) {
   .menu li {
